@@ -19,17 +19,17 @@
 * genai.configure(api_key=GOOGLE_GEMINI_API_KEY)
 
 ## Lista os modelos disponíveis
-### for m in genai.list_models():
- ### if 'generateContent' in m.supported_generation_methods:
- ##  print(m.name)
+#### for m in genai.list_models():
+ #### if 'generateContent' in m.supported_generation_methods:
+ ####  print(m.name)
 
 ## Escolhe um modelo (ex: Gemini 1.5 Pro)
-### model = genai.GenerativeModel('models/gemini-1.5-pro-latest')
+#### model = genai.GenerativeModel('models/gemini-1.5-pro-latest')
 
 ## Inicia um chat e cria um loop de conversação
-### chat = model.start_chat(history=[])
+#### chat = model.start_chat(history=[])
 
-### while True:
+      while True:
       prompt = input("Você: ")
       if prompt.lower() == 'sair':
         break
